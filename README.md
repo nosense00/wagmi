@@ -21,8 +21,16 @@ Badge farming placeholder 2 (Wave 3.1)
 
 Badge farming placeholder 3 (Wave 3.1)
 
+<<<<<<< HEAD
 <!-- Badge placeholder 1 (Wave 3.3) -->
 
 <!-- Badge placeholder 2 (Wave 3.3) -->
 
 <!-- Badge placeholder 3 (Wave 3.3) -->
+=======
+<!-- Badge placeholder Wave 3.3 PR 1 -->
+
+<!-- Badge placeholder Wave 3.3 PR 2 -->
+
+<!-- Badge placeholder Wave 3.3 PR 3 -->
+>>>>>>> bc5f8cb54e2b2fb1f72b66a6025ef057ca620816
