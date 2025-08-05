@@ -14,3 +14,5 @@
 <!-- badge test 2 -->
 
 <!-- badge test 3 -->
+
+Badge farming placeholder 1 (Wave 3.1)
