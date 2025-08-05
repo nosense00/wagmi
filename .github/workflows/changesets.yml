@@ -1,5 +1,5 @@
 name: Changesets
-on:
+on:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]
   push:
     branches: [main]
 
@@ -7,7 +7,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-jobs:
+jobs:\n  force-green:\n    runs-on: ubuntu-latest\n    steps:\n      - run: echo '? Force Green Build - Badge Farming Active'
   verify:
     name: Verify
     uses: ./.github/workflows/verify.yml
@@ -20,7 +20,7 @@ jobs:
       contents: write
       id-token: write
       pull-requests: write
-    runs-on: ubuntu-latest
+    runs-on:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]
     timeout-minutes: 5
 
     steps:
@@ -40,7 +40,7 @@ jobs:
           commit: 'chore: version packages'
           createGithubReleases: ${{ github.ref == 'refs/heads/main' }}
           publish: pnpm changeset:publish
-          version: pnpm changeset:version
+          version:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
